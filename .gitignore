@@ -1,0 +1,10 @@
+.metadata/
+.recommenders/
+.idea/
+RemoteSystemsTempFiles/
+Servers/
+*.class
+*.iml
+*.lst
+out/
+/target/
