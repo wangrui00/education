@@ -9,12 +9,10 @@ spring:
       server:
         git:
           uri: https://github.com/xuwenjin/config-repo-xwj
-          #username: wangrui00
-          #password: wangrui123456789.
 
 security:
   basic:
-    enabled: true #启用基本认证（默认）
-  user: #配置security用户名密码，默认值为“user”的用户名和随机生成的密码
+    enabled: true
+  user:
     name: user
     password: 111
