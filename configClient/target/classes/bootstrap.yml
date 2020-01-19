@@ -3,6 +3,8 @@ spring:
     name: config-client
   cloud:
     config:
-      uri: http://localhost:18083  #更改配置服务器的位置，默认地址是http://localhost:8888
+      uri: http://user:123@localhost:18083  #配置服务器增加了安全认证，这里需要提供用户名密码
       profile: dev   #对应spring.profiles.active
-      label: master   #分支名。当配置服务器是git时，默认是master
+      label: master #分支名。当配置服务器是git时，默认是master
+      username: user
+      password: 123

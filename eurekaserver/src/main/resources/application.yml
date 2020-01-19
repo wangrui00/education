@@ -1,0 +1,14 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost                                                         # 服务注册中心实例的主机名
+    lease-renewal-interval-in-seconds: 30                                       # 客户端向Eureka发送心跳周期(s)
+    lease-expiration-duration-in-seconds: 90                                    # Eureka Server接收实例的最后一次发出的心跳后,删除需要等待时间(s)
+  server:
+    enable-self-preservation: true                                              # Eureka自我保护模式
+  client:
+    register-with-eureka: false                                                 # 是否向服务注册中心注册自己
+    fetch-registry: false                                                       # 是否检索发现服务
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/    # 指定服务注册中心的位置

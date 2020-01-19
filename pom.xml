@@ -58,6 +58,7 @@
         <module>traceDemo</module>
         <module>configServer</module>
         <module>configClient</module>
+        <module>eurekaserver</module>
     </modules>
 
 </project>
