@@ -9,10 +9,7 @@ spring:
       server:
         git:
           uri: https://github.com/xuwenjin/config-repo-xwj
-
-security:
-  basic:
-    enabled: true
-  user:
-    name: user
-    password: 111
+  security:
+    user:
+      name: user
+      password: 111
