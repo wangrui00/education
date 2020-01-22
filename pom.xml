@@ -59,6 +59,7 @@
         <module>configServer</module>
         <module>configClient</module>
         <module>eurekaserver</module>
+        <module>feign</module>
     </modules>
 
 </project>
